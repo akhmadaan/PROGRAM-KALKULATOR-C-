@@ -1,0 +1,63 @@
+#include<iostream>
+#include<stdlib.h>
+
+using namespace std;
+int main()
+{
+    int x,y,hasil;
+
+    cout<<"============================================"<<endl;
+    cout<<"Kalkulator Sederhana"<<endl;
+    cout<<"============================================"<<endl;
+    cout<<endl;
+    cout<<"Daftar Simbol Operator"<<endl;
+    string tambah="tambah (1)";
+    cout<<tambah<<endl;
+    string kurang="kurang (2)";
+    cout<<kurang<<endl;
+     string bagi="bagi (3)";
+    cout<<bagi<<endl;
+    string kali="kali (4)";
+    cout<<kali<<endl;
+
+    cout<<"Masukan angka :";
+    cin>>x;
+    cout<<"Masukan angka :";
+    cin>>y;
+
+    a:
+        int z;
+        cout<<"Masukan Simbol Operator :";
+        cin>>z;
+        cout<<endl;
+
+        cout<<"====================================="<<endl;
+        if(z==1)
+        {
+            hasil=x+y;
+            cout<<"Hasil\t"<<x<<"+"<<y<<"="<<hasil<<endl;
+
+        }
+        else if(z==2)
+        {
+            hasil=x-y;
+            cout<<"Hasil\t"<<x<<"-"<<y<<"="<<hasil<<endl;
+        }
+        else if(z==3)
+        {
+            hasil=x/y;
+            cout<<"Hasil\t"<<x<<":"<<y<<"="<<hasil<<endl;
+        }
+        else if(z==4)
+        {
+            hasil=x*y;
+            cout<<"Hasil\t"<<x<<"*"<<y<<"="<<hasil<<endl;
+        }
+        else
+        {
+            cout<<"Nomor Simbol Operator Salah"<<endl<<endl;
+            goto a;
+        }
+        cout<<"====================================="<<endl;
+        cout<<""<<endl;
+}
